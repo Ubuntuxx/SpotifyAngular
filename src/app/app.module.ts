@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {Router, RouterModule} from "@angular/router";
 import {ROUTES} from "./app.routes";
 import {HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {HttpClientModule } from "@angular/common/http";
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
